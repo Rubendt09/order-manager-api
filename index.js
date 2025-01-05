@@ -12,7 +12,12 @@ const orderRoutes = require("./routes/orderRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // Permitir todos los orígenes
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Métodos permitidos
+  allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
+}));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
