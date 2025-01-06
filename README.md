@@ -143,6 +143,12 @@ Usa herramientas como **Postman** o **cURL** para probar los endpoints definidos
   ```http
   POST /api/orders
   ```
+  
+### **Documentación de la API**
+Puedes consultar la documentación completa de los endpoints en el siguiente enlace de Postman:
+
+[Documentación de la API en Postman](https://documenter.getpostman.com/view/26769075/2sAYJ9AyCF)
+
 
 ### **Conectar con el Frontend**
 Si tienes un frontend desarrollado con Vite, asegúrate de configurar la URL base para apuntar al backend (`http://localhost:3000`).
